@@ -1,4 +1,4 @@
-module gopkg.in/hellish/oauth2.v3
+module gopkg.in/hellish/oauth2
 
 go 1.14
 
