@@ -1,4 +1,4 @@
-module gopkg.in/hellish/oauth2
+module github.com/hellish/oauth2
 
 go 1.14
 
