@@ -3,10 +3,10 @@ package manage
 import (
 	"time"
 
-	"gopkg.in/oauth2.v3"
-	"gopkg.in/oauth2.v3/errors"
-	"gopkg.in/oauth2.v3/generates"
-	"gopkg.in/oauth2.v3/models"
+	"gopkg.in/hellish/oauth2.v3"
+	"gopkg.in/hellish/oauth2.v3/errors"
+	"gopkg.in/hellish/oauth2.v3/generates"
+	"gopkg.in/hellish/oauth2.v3/models"
 )
 
 // NewDefaultManager create to default authorization management instance
@@ -22,21 +22,23 @@ func NewDefaultManager() *Manager {
 // NewManager create to authorization management instance
 func NewManager() *Manager {
 	return &Manager{
-		gtcfg:       make(map[oauth2.GrantType]*Config),
-		validateURI: DefaultValidateURI,
+		gtcfg:                make(map[oauth2.GrantType]*Config),
+		validateURI:          DefaultValidateURI,
+		validateClientSecret: DefaultValidateClientSecret,
 	}
 }
 
 // Manager provide authorization management
 type Manager struct {
-	codeExp           time.Duration
-	gtcfg             map[oauth2.GrantType]*Config
-	rcfg              *RefreshingConfig
-	validateURI       ValidateURIHandler
-	authorizeGenerate oauth2.AuthorizeGenerate
-	accessGenerate    oauth2.AccessGenerate
-	tokenStore        oauth2.TokenStore
-	clientStore       oauth2.ClientStore
+	codeExp              time.Duration
+	gtcfg                map[oauth2.GrantType]*Config
+	rcfg                 *RefreshingConfig
+	validateURI          ValidateURIHandler
+	validateClientSecret ValidateClientSecretHandler
+	authorizeGenerate    oauth2.AuthorizeGenerate
+	accessGenerate       oauth2.AccessGenerate
+	tokenStore           oauth2.TokenStore
+	clientStore          oauth2.ClientStore
 }
 
 // get grant type config
@@ -90,6 +92,11 @@ func (m *Manager) SetRefreshTokenCfg(cfg *RefreshingConfig) {
 // SetValidateURIHandler set the validates that RedirectURI is contained in baseURI
 func (m *Manager) SetValidateURIHandler(handler ValidateURIHandler) {
 	m.validateURI = handler
+}
+
+// SetValidateClientSecretHandler set the validateClientSecret to handle client secret comparison
+func (m *Manager) SetValidateClientSecretHandler(handler ValidateClientSecretHandler) {
+	m.validateClientSecret = handler
 }
 
 // MapAuthorizeGenerate mapping the authorize code generate interface
@@ -255,7 +262,7 @@ func (m *Manager) GenerateAccessToken(gt oauth2.GrantType, tgr *oauth2.TokenGene
 	cli, err := m.GetClient(tgr.ClientID)
 	if err != nil {
 		return nil, err
-	} else if tgr.ClientSecret != cli.GetSecret() {
+	} else if !m.validateClientSecret(tgr.ClientSecret, cli.GetSecret()) {
 		return nil, errors.ErrInvalidClient
 	} else if tgr.RedirectURI != "" {
 		if err := m.validateURI(cli.GetDomain(), tgr.RedirectURI); err != nil {
@@ -327,7 +334,7 @@ func (m *Manager) RefreshAccessToken(tgr *oauth2.TokenGenerateRequest) (oauth2.T
 	cli, err := m.GetClient(tgr.ClientID)
 	if err != nil {
 		return nil, err
-	} else if tgr.ClientSecret != cli.GetSecret() {
+	} else if !m.validateClientSecret(tgr.ClientSecret, cli.GetSecret()) {
 		return nil, errors.ErrInvalidClient
 	}
 

@@ -3,9 +3,9 @@
 //     package main
 //     import (
 //         "net/http"
-//         "gopkg.in/oauth2.v3/manage"
-//         "gopkg.in/oauth2.v3/server"
-//         "gopkg.in/oauth2.v3/store"
+//         "gopkg.in/hellish/oauth2.v3/manage"
+//         "gopkg.in/hellish/oauth2.v3/server"
+//         "gopkg.in/hellish/oauth2.v3/store"
 //     )
 //     func main() {
 //         manager := manage.NewDefaultManager()

@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"time"
 
-	"gopkg.in/oauth2.v3"
-	"gopkg.in/oauth2.v3/errors"
+	"gopkg.in/hellish/oauth2.v3"
+	"gopkg.in/hellish/oauth2.v3/errors"
 )
 
 type (

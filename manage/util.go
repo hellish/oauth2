@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"strings"
 
-	"gopkg.in/oauth2.v3/errors"
+	"gopkg.in/hellish/oauth2.v3/errors"
 )
 
 type (
@@ -27,4 +27,14 @@ func DefaultValidateURI(baseURI string, redirectURI string) error {
 		return errors.ErrInvalidRedirectURI
 	}
 	return nil
+}
+
+type (
+	// ValidateClientSecretHandler will check if rawSecret is equal to hashedSecret
+	ValidateClientSecretHandler func(rawSecret, hashedSecret string) bool
+)
+
+// DefaultValidateClientSecret will string compare if the rawSecret and hashedSecret are equal
+func DefaultValidateClientSecret(rawSecret, hashedSecret string) bool {
+	return rawSecret == hashedSecret
 }

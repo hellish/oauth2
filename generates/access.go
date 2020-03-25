@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"gopkg.in/oauth2.v3"
-	"gopkg.in/oauth2.v3/utils/uuid"
+	"gopkg.in/hellish/oauth2.v3"
+	"gopkg.in/hellish/oauth2.v3/utils/uuid"
 )
 
 // NewAccessGenerate create to generate the access token instance
