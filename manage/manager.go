@@ -3,10 +3,10 @@ package manage
 import (
 	"time"
 
-	"gopkg.in/hellish/oauth2.v3"
-	"gopkg.in/hellish/oauth2.v3/errors"
-	"gopkg.in/hellish/oauth2.v3/generates"
-	"gopkg.in/hellish/oauth2.v3/models"
+	"github.com/hellish/oauth2"
+	"github.com/hellish/oauth2/errors"
+	"github.com/hellish/oauth2/generates"
+	"github.com/hellish/oauth2/models"
 )
 
 // NewDefaultManager create to default authorization management instance

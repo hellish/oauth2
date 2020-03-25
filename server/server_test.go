@@ -8,12 +8,12 @@ import (
 	"testing"
 
 	"github.com/gavv/httpexpect"
-	"gopkg.in/hellish/oauth2.v3"
-	"gopkg.in/hellish/oauth2.v3/errors"
-	"gopkg.in/hellish/oauth2.v3/manage"
-	"gopkg.in/hellish/oauth2.v3/models"
-	"gopkg.in/hellish/oauth2.v3/server"
-	"gopkg.in/hellish/oauth2.v3/store"
+	"github.com/hellish/oauth2"
+	"github.com/hellish/oauth2/errors"
+	"github.com/hellish/oauth2/manage"
+	"github.com/hellish/oauth2/models"
+	"github.com/hellish/oauth2/server"
+	"github.com/hellish/oauth2/store"
 )
 
 var (

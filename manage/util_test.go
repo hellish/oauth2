@@ -3,7 +3,7 @@ package manage_test
 import (
 	"testing"
 
-	"gopkg.in/hellish/oauth2.v3/manage"
+	"github.com/hellish/oauth2/manage"
 
 	. "github.com/smartystreets/goconvey/convey"
 )

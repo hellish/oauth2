@@ -1,7 +1,7 @@
 package server
 
 import (
-	"gopkg.in/hellish/oauth2.v3"
+	"github.com/hellish/oauth2"
 )
 
 // SetTokenType token type

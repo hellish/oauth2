@@ -3,8 +3,8 @@ package store_test
 import (
 	"testing"
 
-	"gopkg.in/hellish/oauth2.v3/models"
-	"gopkg.in/hellish/oauth2.v3/store"
+	"github.com/hellish/oauth2/models"
+	"github.com/hellish/oauth2/store"
 
 	. "github.com/smartystreets/goconvey/convey"
 )

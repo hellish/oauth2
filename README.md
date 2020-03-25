@@ -31,7 +31,7 @@
 ### Download and install
 
 ``` bash
-go get -u -v gopkg.in/hellish/oauth2.v3/...
+go get -u -v github.com/hellish/oauth2/...
 ```
 
 ### Create file `server.go`
@@ -43,11 +43,11 @@ import (
 	"log"
 	"net/http"
 
-	"gopkg.in/hellish/oauth2.v3/errors"
-	"gopkg.in/hellish/oauth2.v3/manage"
-	"gopkg.in/hellish/oauth2.v3/models"
-	"gopkg.in/hellish/oauth2.v3/server"
-	"gopkg.in/hellish/oauth2.v3/store"
+	"github.com/hellish/oauth2/errors"
+	"github.com/hellish/oauth2/manage"
+	"github.com/hellish/oauth2/models"
+	"github.com/hellish/oauth2/server"
+	"github.com/hellish/oauth2/store"
 )
 
 func main() {
@@ -135,7 +135,7 @@ Simulation examples of authorization code model, please check [example](/example
 ```go
 
 import (
-	"gopkg.in/hellish/oauth2.v3/generates"
+	"github.com/hellish/oauth2/generates"
 	"github.com/dgrijalva/jwt-go"
 )
 

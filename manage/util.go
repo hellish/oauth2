@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"strings"
 
-	"gopkg.in/hellish/oauth2.v3/errors"
+	"github.com/hellish/oauth2/errors"
 )
 
 type (

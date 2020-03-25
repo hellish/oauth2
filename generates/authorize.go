@@ -5,8 +5,8 @@ import (
 	"encoding/base64"
 	"strings"
 
-	"gopkg.in/hellish/oauth2.v3"
-	"gopkg.in/hellish/oauth2.v3/utils/uuid"
+	"github.com/hellish/oauth2"
+	"github.com/hellish/oauth2/utils/uuid"
 )
 
 // NewAuthorizeGenerate create to generate the authorize code instance

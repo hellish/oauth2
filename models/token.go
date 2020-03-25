@@ -3,7 +3,7 @@ package models
 import (
 	"time"
 
-	"gopkg.in/hellish/oauth2.v3"
+	"github.com/hellish/oauth2"
 )
 
 // NewToken create to token model instance

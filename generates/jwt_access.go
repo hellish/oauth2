@@ -8,9 +8,9 @@ import (
 	errs "errors"
 
 	"github.com/dgrijalva/jwt-go"
-	"gopkg.in/hellish/oauth2.v3"
-	"gopkg.in/hellish/oauth2.v3/errors"
-	"gopkg.in/hellish/oauth2.v3/utils/uuid"
+	"github.com/hellish/oauth2"
+	"github.com/hellish/oauth2/errors"
+	"github.com/hellish/oauth2/utils/uuid"
 )
 
 // JWTAccessClaims jwt claims

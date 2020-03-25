@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"gopkg.in/hellish/oauth2.v3"
+	"github.com/hellish/oauth2"
 )
 
 // Config configuration parameters

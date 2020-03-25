@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"gopkg.in/hellish/oauth2.v3"
+	"github.com/hellish/oauth2"
 )
 
 // NewClientStore create client store
