@@ -3,7 +3,7 @@ package models
 import (
 	"time"
 
-	"github.com/hellish/oauth2"
+	"lavva/oauth2"
 )
 
 // NewToken create to token model instance

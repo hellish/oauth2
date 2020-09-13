@@ -3,7 +3,7 @@ package manage_test
 import (
 	"testing"
 
-	"github.com/hellish/oauth2/manage"
+	"lavva/oauth2/manage"
 
 	. "github.com/smartystreets/goconvey/convey"
 )

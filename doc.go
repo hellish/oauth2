@@ -3,9 +3,9 @@
 //     package main
 //     import (
 //         "net/http"
-//         "github.com/hellish/oauth2/manage"
-//         "github.com/hellish/oauth2/server"
-//         "github.com/hellish/oauth2/store"
+//         "lavva/oauth2/manage"
+//         "lavva/oauth2/server"
+//         "lavva/oauth2/store"
 //     )
 //     func main() {
 //         manager := manage.NewDefaultManager()

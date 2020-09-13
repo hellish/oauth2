@@ -8,12 +8,12 @@ import (
 	"testing"
 
 	"github.com/gavv/httpexpect"
-	"github.com/hellish/oauth2"
-	"github.com/hellish/oauth2/errors"
-	"github.com/hellish/oauth2/manage"
-	"github.com/hellish/oauth2/models"
-	"github.com/hellish/oauth2/server"
-	"github.com/hellish/oauth2/store"
+	"lavva/oauth2"
+	"lavva/oauth2/errors"
+	"lavva/oauth2/manage"
+	"lavva/oauth2/models"
+	"lavva/oauth2/server"
+	"lavva/oauth2/store"
 )
 
 var (

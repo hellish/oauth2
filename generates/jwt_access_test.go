@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
-	"github.com/hellish/oauth2"
-	"github.com/hellish/oauth2/generates"
-	"github.com/hellish/oauth2/models"
+	"lavva/oauth2"
+	"lavva/oauth2/generates"
+	"lavva/oauth2/models"
 
 	. "github.com/smartystreets/goconvey/convey"
 )

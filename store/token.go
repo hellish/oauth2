@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"github.com/tidwall/buntdb"
-	"github.com/hellish/oauth2"
-	"github.com/hellish/oauth2/models"
-	"github.com/hellish/oauth2/utils/uuid"
+	"lavva/oauth2"
+	"lavva/oauth2/models"
+	"lavva/oauth2/utils/uuid"
 )
 
 // NewMemoryTokenStore create a token store instance based on memory

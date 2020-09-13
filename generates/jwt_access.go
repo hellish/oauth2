@@ -8,9 +8,9 @@ import (
 	errs "errors"
 
 	"github.com/dgrijalva/jwt-go"
-	"github.com/hellish/oauth2"
-	"github.com/hellish/oauth2/errors"
-	"github.com/hellish/oauth2/utils/uuid"
+	"lavva/oauth2"
+	"lavva/oauth2/errors"
+	"lavva/oauth2/utils/uuid"
 )
 
 // JWTAccessClaims jwt claims

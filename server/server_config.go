@@ -1,7 +1,7 @@
 package server
 
 import (
-	"github.com/hellish/oauth2"
+	"lavva/oauth2"
 )
 
 // SetTokenType token type

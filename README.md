@@ -31,7 +31,7 @@
 ### Download and install
 
 ``` bash
-go get -u -v github.com/hellish/oauth2/...
+go get -u -v lavva/oauth2/...
 ```
 
 ### Create file `server.go`
@@ -43,11 +43,11 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/hellish/oauth2/errors"
-	"github.com/hellish/oauth2/manage"
-	"github.com/hellish/oauth2/models"
-	"github.com/hellish/oauth2/server"
-	"github.com/hellish/oauth2/store"
+	"lavva/oauth2/errors"
+	"lavva/oauth2/manage"
+	"lavva/oauth2/models"
+	"lavva/oauth2/server"
+	"lavva/oauth2/store"
 )
 
 func main() {
@@ -135,7 +135,7 @@ Simulation examples of authorization code model, please check [example](/example
 ```go
 
 import (
-	"github.com/hellish/oauth2/generates"
+	"lavva/oauth2/generates"
 	"github.com/dgrijalva/jwt-go"
 )
 

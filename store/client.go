@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/hellish/oauth2"
+	"lavva/oauth2"
 )
 
 // NewClientStore create client store

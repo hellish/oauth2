@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hellish/oauth2"
-	"github.com/hellish/oauth2/utils/uuid"
+	"lavva/oauth2"
+	"lavva/oauth2/utils/uuid"
 )
 
 // NewAccessGenerate create to generate the access token instance

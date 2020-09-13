@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/hellish/oauth2/errors"
+	"lavva/oauth2/errors"
 )
 
 type (

@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/hellish/oauth2"
-	"github.com/hellish/oauth2/errors"
+	"lavva/oauth2"
+	"lavva/oauth2/errors"
 )
 
 type (

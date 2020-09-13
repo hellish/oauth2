@@ -5,8 +5,8 @@ import (
 	"encoding/base64"
 	"strings"
 
-	"github.com/hellish/oauth2"
-	"github.com/hellish/oauth2/utils/uuid"
+	"lavva/oauth2"
+	"lavva/oauth2/utils/uuid"
 )
 
 // NewAuthorizeGenerate create to generate the authorize code instance

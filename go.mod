@@ -1,6 +1,4 @@
-module github.com/hellish/oauth2
-
-go 1.14
+module lavva/oauth2
 
 require (
 	github.com/ajg/form v1.5.1 // indirect
@@ -14,7 +12,6 @@ require (
 	github.com/imkira/go-interpol v1.1.0 // indirect
 	github.com/k0kubun/colorstring v0.0.0-20150214042306-9440f1994b88 // indirect
 	github.com/klauspost/compress v1.10.3 // indirect
-	github.com/klauspost/cpuid v1.2.3 // indirect
 	github.com/mattn/go-colorable v0.1.4 // indirect
 	github.com/moul/http2curl v1.0.0 // indirect
 	github.com/onsi/ginkgo v1.10.2 // indirect
@@ -39,3 +36,5 @@ require (
 	golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
 	gopkg.in/yaml.v2 v2.2.8 // indirect
 )
+
+go 1.15
